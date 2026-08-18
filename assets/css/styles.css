@@ -473,6 +473,20 @@ table.compare tr:last-child th, table.compare tr:last-child td { border-bottom: 
 .faq-group-title { font-family: var(--font-display); font-size: var(--step-2); font-weight: 500; margin: 3rem 0 .5rem; }
 .faq-group-title:first-of-type { margin-top: 0; }
 
+/* ---------- Cal.com embed ---------- */
+.cal-inline {
+  width: 100%;
+  min-height: 680px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+@media (max-width: 620px) {
+  .cal-inline { min-height: 860px; }
+}
+
 /* ---------- Forms ---------- */
 .form-panel {
   background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
