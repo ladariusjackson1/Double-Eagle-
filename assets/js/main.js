@@ -146,6 +146,7 @@
     if (!box) return;
     box.className = "form-status is-visible is-" + type;
     box.textContent = message;
+    box.scrollIntoView({ behavior: "smooth", block: "center" });
     box.setAttribute("role", type === "error" ? "alert" : "status");
   }
 

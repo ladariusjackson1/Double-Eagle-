@@ -11,15 +11,15 @@ window.DE_CONFIG = {
      Example: "https://hook.us1.make.com/xxxxxxxxxxxxx"
      Leave empty and forms will show a clear configuration error instead of
      silently discarding leads. */
-  formEndpoint: "",
+  formEndpoint: "https://formspree.io/f/xljrovea",
 
   /* Scheduling link (Calendly / SavvyCal / Cal.com / TidyCal).
      Set this and the "Book a call" buttons will point straight at it.
      Leave empty to keep visitors on the on-site qualification form. */
-  bookingUrl: "",
+  bookingUrl: "https://calendly.com/double-eagle-financial/profit-leak-audit-call",
 
   /* Business contact details — used in structured data and mailto links. */
-  email: "hello@doubleeaglefinancial.com",
+  email: "doubleeaglefin@gmail.com",
   phone: "",
 
   /* Optional analytics. Leave empty to run without any tracking scripts. */
