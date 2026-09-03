@@ -20,7 +20,7 @@ window.DE_CONFIG = {
 
   /* Business contact details — used in structured data and mailto links. */
   email: "hello@doubleeaglefinancial.com",
-  phone: "",
+  phone: "(662) 506-2041",
 
   /* Optional analytics. Leave empty to run without any tracking scripts. */
   ga4MeasurementId: "",
