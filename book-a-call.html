@@ -118,15 +118,15 @@
       </div>
 
       <div class="form-panel" id="booking-form">
-        <p class="eyebrow">Request a time</p>
-        <h3>Book my fit call</h3>
-        <p style="color:var(--muted);font-size:.95rem">Answer these and we'll come to the call already knowing your situation — so the twenty minutes goes on your business, not on background.</p>
+        <p class="eyebrow">Book a time</p>
+        <h3>Pick a slot and you're done</h3>
+        <p style="color:var(--muted);font-size:.95rem">Twenty minutes on the calendar, no back and forth. Pick a time that works and it's confirmed straight away. Would you rather we came already knowing your situation? Fill in the form below instead and we'll reply with times.</p>
 
         <!-- Scheduling integration point: when DE_CONFIG.bookingUrl is set in
              assets/js/config.js, this button routes to the live calendar. Until
              then, the qualification form below is the working booking path. -->
         <p style="margin-bottom:1.5rem">
-          <a class="btn btn--dark btn--block" href="#booking-form" data-booking-link data-cta="book-call-calendar" data-cta-location="booking-page">Open the calendar</a>
+          <a class="btn btn--primary btn--block" href="#booking-form" data-booking-link data-cta="book-call-calendar" data-cta-location="booking-page">See available times</a>
         </p>
 
         <form data-form="book-call" data-redirect="/thank-you.html?f=call" novalidate>
@@ -219,7 +219,7 @@
             <span>I'm happy for Double Eagle Financial to contact me about this request. See the <a href="/privacy.html">privacy policy</a>.</span>
           </label>
 
-          <button class="btn btn--primary btn--block" type="submit" data-cta="submit-book-call" data-cta-location="booking-page">Request my fit call</button>
+          <button class="btn btn--dark btn--block" type="submit" data-cta="submit-book-call" data-cta-location="booking-page">Send my details instead</button>
           <p class="btn-note">We reply with times within one business day.</p>
         </form>
       </div>
