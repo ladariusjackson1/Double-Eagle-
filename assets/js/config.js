@@ -19,7 +19,7 @@ window.DE_CONFIG = {
   bookingUrl: "https://calendly.com/double-eagle-financial/profit-leak-audit-call",
 
   /* Business contact details — used in structured data and mailto links. */
-  email: "doubleeaglefin@gmail.com",
+  email: "hello@doubleeaglefinancial.com",
   phone: "",
 
   /* Optional analytics. Leave empty to run without any tracking scripts. */
