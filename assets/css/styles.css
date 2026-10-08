@@ -532,18 +532,6 @@ table.compare tr:last-child th, table.compare tr:last-child td { border-bottom: 
 .fit-col--yes li::before { content: ""; position: absolute; left: 0; top: .42em; width: 10px; height: 6px; border-left: 2px solid var(--verdigris); border-bottom: 2px solid var(--verdigris); transform: rotate(-45deg); }
 .fit-col--no li::before { content: "—"; position: absolute; left: 0; top: 0; color: #6B757E; font-weight: 600; }
 
-/* Proof placeholder — clearly labelled, never fabricated */
-.proof-placeholder {
-  background: var(--white); border: 1px dashed #B9BEC4; border-radius: var(--radius);
-  padding: clamp(1.4rem, 1.1rem + 1vw, 2rem);
-}
-.proof-placeholder .tag {
-  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .13em; text-transform: uppercase;
-  color: var(--muted); background: var(--paper); border: 1px solid var(--line);
-  padding: .25rem .55rem; border-radius: 2px; display: inline-block; margin-bottom: .9rem;
-}
-.proof-placeholder p { color: var(--muted); font-size: .95rem; margin: 0; }
-
 /* ---------- CTA band ---------- */
 .cta-band { background: var(--ink); color: var(--paper); text-align: center; position: relative; }
 .cta-band::before {
@@ -611,7 +599,7 @@ table.compare tr:last-child th, table.compare tr:last-child td { border-bottom: 
 /* ==========================================================================
    Dark-surface overrides
    Four sections render on ink: .hero, .page-head, .cta-band and .section--ink.
-   They previously inherited light-surface component colours, which made ghost
+   They previously inherited light-surface component colors, which made ghost
    buttons dark-on-dark and dropped helper text below contrast minimums.
    Declared last so they win without !important.
    ========================================================================== */
