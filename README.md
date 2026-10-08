@@ -41,8 +41,6 @@ Canonical URLs, Open Graph tags, and `sitemap.xml` use `https://www.doubleeaglef
 
 ## Deploy
 
-Netlify hosts the live site from the repository root. There is no `netlify.toml` and no build command in this repo, so nothing here defines a Netlify build.
-
-If the Netlify site is connected to this GitHub repository with `main` as the production branch, merging to `main` publishes the site. If the Netlify site was created as a manual deploy, merging does not publish anything until the repository root is deployed again in Netlify. This repository does not record which of those is configured.
+Netlify deploys this repository from `main`. Details — the Git connection, `netlify.toml`, Cloudflare DNS, the Formspree forms, and rollback — are in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 Do not enable GitHub Pages for this repository. A Pages deploy of this repo is a second, broken copy of the site.
