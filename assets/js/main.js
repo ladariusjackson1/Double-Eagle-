@@ -1,13 +1,12 @@
-/* Double Eagle Financial — site behaviour
+/* Double Eagle Financial — site behavior
    Vanilla JS, no dependencies. Deferred; safe to run before paint completes. */
 (function () {
   "use strict";
 
   /* ----------------------------------------------------------------------
      Analytics layer
-     Pushes a normalised event to window.dataLayer so any tag manager
+     Pushes a normalized event to window.dataLayer so any tag manager
      (GTM, Plausible, Fathom, GA4) can consume it. No vendor lock-in.
-     Replace or extend `track` in assets/js/analytics-config.js.
      ---------------------------------------------------------------------- */
   window.dataLayer = window.dataLayer || [];
   function track(event, params) {
