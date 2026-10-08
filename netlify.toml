@@ -1,0 +1,19 @@
+# Static site. Netlify publishes the repository root as-is.
+# The build command is omitted on purpose: this repo has no build step,
+# and an empty command here would clear a command set in the Netlify UI.
+# HTML post-processing (Pretty URLs) is also left to the UI. Setting it
+# in this file can reset the other processing checkboxes.
+
+[build]
+  publish = "."
+
+# Security headers for every response. Caching and HSTS stay on Netlify's
+# defaults (see DEPLOYMENT.md). These do not change page content.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io https://fonts.googleapis.com https://fonts.gstatic.com; form-action 'self' https://formspree.io; frame-src 'self' https://app.netlify.com; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
